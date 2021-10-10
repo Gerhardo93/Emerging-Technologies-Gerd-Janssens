@@ -8,12 +8,12 @@ import hashlib
 #enkel characters nodig om op te vragen (niet in comics zoeken, maar bij characters (comics staan ook gebonden bij characters))
 api = "http://gateway.marvel.com/v1/public/characters?"
 #public key van marvel gekregen (public key van Gerd Janssens; please do not re-use))
-public_key = "17b5457665f46432924d720f735997de"
+public_key = "r0370181"
 #Give a timestamp
 timestamp = "1"
 #private key van marvel gekregen (private key van Gerd Janssens; please do not re-use)
 #pre_hash is later nodig
-private_key = "0f937d97549dfab595cf3f5eb6be0bfb23c5c203"
+private_key = "r0370181"
 pre_hash = timestamp + private_key + public_key
 #MD5 hash, die gebruikt wordt bij het oproepen van de correcte url om data in te lezen (thanks youtube)
 result = hashlib.md5(pre_hash.encode())
